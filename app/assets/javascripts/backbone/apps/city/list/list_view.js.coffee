@@ -4,19 +4,19 @@
 		template: "city/list/list_layout"
 
 		regions:
-			titleRegion: 	"#title-region"
-			panelRegion:	"#panel-region"
-			newRegion:		"#new-region"
+			#titleRegion: 	"#title-region"
+			#panelRegion:	"#panel-region"
+			#newRegion:		"#new-region"
 			cityRegion:		"#city-region"
 
-	class List.Title extends App.Views.ItemView
-		template: "city/list/_title"
+	#class List.Title extends App.Views.ItemView
+		#template: "city/list/_title"
 
-	class List.Panel extends App.Views.ItemView
-		template: "city/list/_panel"
+	#class List.Panel extends App.Views.ItemView
+		#template: "city/list/_panel"
 
-		triggers:
-			"click #new-city" : "new:city:button:clicked"
+		#triggers:
+			#"click #new-city" : "new:city:button:clicked"
 
 	class List.CityMember extends App.Views.ItemView
 		template: "city/list/_city_member"

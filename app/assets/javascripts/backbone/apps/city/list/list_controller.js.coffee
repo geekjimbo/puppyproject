@@ -12,26 +12,26 @@
 				# @listenTo @layout, "close", @close
 
 				@listenTo @layout, "show", =>
-					@titleRegion()
-					@panelRegion()
+					#@titleRegion()
+					#@panelRegion()
 					@cityRegion city
 
 				@show @layout
 
-		titleRegion: ->
-			titleView = @getTitleView()
-			@layout.titleRegion.show titleView
+		#titleRegion: ->
+			#titleView = @getTitleView()
+			#@layout.titleRegion.show titleView
 
-		panelRegion: ->
-			panelView = @getPanelView()
+		#panelRegion: ->
+			#panelView = @getPanelView()
 
-			@listenTo panelView, "new:city:button:clicked", =>
-				@newRegion()
+			#@listenTo panelView, "new:city:button:clicked", =>
+				#@newRegion()
 
-			@layout.panelRegion.show panelView
+			#@layout.panelRegion.show panelView
 
-		newRegion: ->
-      App.execute "new:city:member", @layout.newRegion
+		#newRegion: ->
+      #App.execute "new:city:member", @layout.newRegion
 
 		cityRegion: (city) ->
 			cityView = @getCityView city
@@ -49,11 +49,11 @@
 			new List.City
 				collection: city
 
-		getPanelView: ->
-			new List.Panel
+		#getPanelView: ->
+			#new List.Panel
 
-		getTitleView: ->
-			new List.Title
+		#getTitleView: ->
+			#new List.Title
 
 		getLayoutView: (city) ->
 			new List.Layout

@@ -9,11 +9,11 @@
 		url: -> Routes.city_index_path()
 
 	API =
-		getCrew: ->
+		getCity: ->
 			city = new Entities.CityCollection
-			crew.fetch
+			city.fetch
 				reset: true
-			crew
+			city
 
 		getCityMember: (id) ->
 			member = new Entities.City
