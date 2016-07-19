@@ -1,0 +1,52 @@
+<div id="edit-crew">
+	<fieldset>
+		<legend>Details</legend>
+		<div class="row">
+			<div class="large-3 columns">
+				<label class="right inline">Name</label>
+	        </div>
+	        <div class="large-9 columns">
+				<div class="large-5">
+					<input type="text" name="name" value="<%= @name %>" />
+				</div>
+	        </div>
+		</div>
+		<div class="row">
+			<div class="large-3 columns">
+				<label class="right inline">Title</label>
+	        </div>
+	        <div class="large-9 columns">
+				<div class="large-5 left">
+					<input type="text" name="title" value="<%= @title %>" />
+				</div>
+				<div class="large-7 columns">
+					<h6 class="subheader hint">Job Title</h6>
+				</div>
+	        </div>
+		</div>
+		<div class="row">
+			<div class="large-3 columns">
+				<label class="right inline">Company</label>
+	        </div>
+			<div class="large-9 columns">
+				<div class="large-5 left">
+					<input type="text" name="species" value="<%= @species %>" />
+				</div>
+				<div class="large-7 columns">
+					<h6 class="subheader hint">RJ's Customer Company</h6>
+				</div>
+	        </div>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>DataPackages requested</legend>
+		<div class="row">
+			<div class="large-3 columns">
+				<label class="right inline">Data Package Name</label>
+	        </div>
+	        <div class="large-9 columns left">
+				<textarea name="quote" class="large-6"><%= @quote %></textarea>
+	        </div>
+		</div>
+	</fieldset>
+</div>

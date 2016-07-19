@@ -1,0 +1,6 @@
+<div class="panel radius text-center">
+	<h2>
+		<small>No Users Found!</small>
+	</h2>
+	<p class="subheader">Add a user to get started.</p>
+</div>

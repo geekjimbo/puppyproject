@@ -1,0 +1,32 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default 
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  database: rj
+  user: jimmyfigueroa
+  password: postgres
+  schema_search_path: "public"
+
+development:
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  database: rj
+  user: jimmyfigueroa
+  password: postgres
+  schema_search_path: "public"
+
+test:
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  database: rj
+  user: jimmyfigueroa
+  password: postgres
+  schema_search_path: "public"
