@@ -21,6 +21,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'coffee-script-source'
 gem "zurb-foundation"
 gem "foundation-icons-sass-rails"
+gem 'table_print'
 #
 # Use Uglifier as compressor for JavaScript assets
 # See https://github.com/rails/execjs#readme for more supported runtimes

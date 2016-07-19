@@ -1,0 +1,17 @@
+<div id="edit-city">
+	<fieldset>
+		<legend>Details</legend>
+		<div class="row">
+			<div class="large-3 columns">
+				<label class="right inline">Name</label>
+	        </div>
+	        <div class="large-9 columns">
+				<div class="large-5">
+					<input type="text" name="name" value="<%= @name %>" />
+				</div>
+	        </div>
+		</div>
+
+	</fieldset>
+
+</div>

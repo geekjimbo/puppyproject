@@ -1,5 +1,6 @@
 RJ::Application.routes.draw do
 	resources :crew
+  resources :city
 	
 	#"static" => "application#static"
   root :to => 'application#index'
