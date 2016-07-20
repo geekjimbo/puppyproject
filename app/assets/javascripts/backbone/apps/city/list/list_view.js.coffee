@@ -7,7 +7,8 @@
 			#titleRegion: 	"#title-region"
 			#panelRegion:	"#panel-region"
 			#newRegion:		"#new-region"
-			cityRegion:		"#city-region"
+			#cityRegion:		"#city-region"
+			cityRegion: 	"#form-region"
 
 	#class List.Title extends App.Views.ItemView
 		#template: "city/list/_title"

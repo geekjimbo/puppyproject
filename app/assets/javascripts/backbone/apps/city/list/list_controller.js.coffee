@@ -36,12 +36,17 @@
 		cityRegion: (city) ->
 			cityView = @getCityView city
 
+			@listenTo cityView, "searchlist:cancel", ->
+				App.vent.trigger "city:cancelled", city
+
 			@listenTo cityView, "childview:city:member:clicked", (child, args) ->
 				App.vent.trigger "city:member:clicked", args.model
 
 			@listenTo cityView, "childview:city:delete:clicked", (child, args) ->
 				model = args.model
 				if confirm "Are you sure you want to delete #{model.get("name")}?" then model.destroy() else false
+
+			cityView = App.request "searchlist:wrapper", cityView
 
 			@layout.cityRegion.show cityView
 

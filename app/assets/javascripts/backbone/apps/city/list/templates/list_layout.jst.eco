@@ -1,6 +1,6 @@
-<div id="city-list">
-
-	<section>
-		<div id="city-region" class="large-12 columns"></div>
-	</section>
+<div id="city-list" class="large-12 columns">
+	<div >
+		<h3>Pick a City</h3>
+		<div id="form-region"></div>
+	</div>
 </div>
