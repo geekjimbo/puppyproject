@@ -4,23 +4,11 @@
 		template: "searchlist/form"
 
 		tagName: "form"
-		#attributes: ->
-		#	"data-type": @getFormDataType()
+
 
 		regions:
 			searchlistContentRegion: "#searchlist-content-region"
 
-		#ui:
-			#buttonContainer: "ul.inline-list"
-
-		#triggers:
-			#"submit"														: "form:submit"
-			#"click [data-form-button='cancel']"	: "searchlist:cancel"
-
-		#modelEvents:
-		#	"change:_errors" 	: "changeErrors"
-		#	"sync:start"			:	"syncStart"
-		#	"sync:stop"				:	"syncStop"
 
 		initialize: ->
 			@setInstancePropertiesFor "config"  #, "buttons"

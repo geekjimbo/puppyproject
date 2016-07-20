@@ -4,17 +4,12 @@
 		<div class="row">
 			<div class="large-3 columns">
 				<label class="right inline">City Id/Origin</label>
-	    </div>
-			<div class="large-9 columns">
-				<form>
-					<select id="origin" name="origin" class="city_selector">
-					  <option value="1">Value 1</option>
-						<option value="2">Value 2</option>
-						<option value="3">Value 3</option>
-						<option value="4">Value 4</option>
-					</select>
-				</form>
-			</div>
+	        </div>
+	        <div class="large-9 columns">
+				<div class="large-5">
+					<input type="text" name="origin" value="<%= @origin %>" />
+				</div>
+	        </div>
 		</div>
 		<div class="row">
 			<div class="large-3 columns">

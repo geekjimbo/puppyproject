@@ -19,21 +19,20 @@
 		#triggers:
 			#"click #new-city" : "new:city:button:clicked"
 
-	class List.CityMember extends App.Views.ItemView
-		template: "city/list/_city_member"
-		tagName: "li"
-		className: "city-member"
+		class List.CityMember extends App.Views.ItemView
+			template: "city/list/_city_member"
+			tagName: "li"
+			className: "city-member"
 
-		triggers:
-			"click .city-delete button" : "city:delete:clicked"
-			"click" 										: "city:member:clicked"
+			triggers:
+				"click" 										: "city:member:clicked"
 
-	class List.Empty extends App.Views.ItemView
-		template: "city/list/_empty"
-		tagName: "li"
+		class List.Empty extends App.Views.ItemView
+			template: "city/list/_empty"
+			tagName: "li"
 
-	class List.City extends App.Views.CompositeView
-		template: "city/list/_city"
-		itemView: List.CityMember
-		emptyView: List.Empty
-		itemViewContainer: "ul"
+		class List.City extends App.Views.CompositeView
+			template: "city/list/_city"
+			itemView: List.CityMember
+			emptyView: List.Empty
+			itemViewContainer: "ul"

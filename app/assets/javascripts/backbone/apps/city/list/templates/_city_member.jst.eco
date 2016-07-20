@@ -5,10 +5,3 @@
 			</div>
    </div>
  </div>
-
-<div class="city-delete">
-	<button class="button secondary tiny radius">
-		<i class="general-enclosed foundicon-remove"></i>
-		Delete
-	</button>
-</div>

@@ -31,3 +31,7 @@ $(document).foundation();
 //= require turbolinks
 
 $(function(){ $(document).foundation(); });
+
+function getThisElement(element) {
+  console.log(element);
+}
